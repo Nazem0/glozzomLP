@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-image: linear-gradient(to right, rgba(50, 146, 166, 0.8), rgba(50, 146, 166, 0.8)), url('img/mountains.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bg-primary {
+            background-color: rgba(50, 146, 166, 0.8) !important;
+        }
+
+        .btn-primary {
+            background-color: rgba(50, 146, 166, 0.8) !important;
+        }
+
+        .text-primary {
+            color: rgba(50, 146, 166, 0.8) !important;
+        }
+
+        .border-primary {
+            border-color: rgba(50, 146, 166, 0.8) !important;
+        }
+
+        .customer-img {
+            top: -1.5rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 80px;
+        }
+
+        .card {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-30px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary position-sticky top-0 z-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./img/mlogo.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+                <b>Mizuxe</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Authors">Meet The Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container text-white">
+            <div class="row gap-5 align-items-center py-5">
+                <div class="text-center col">
+                    <p class="display-1">Do What You Dream Of...</p>
+                    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quo?</p>
+                    <button class="btn btn-outline-secondary text-white fs-5">→ Read More</button>
+                </div>
+                <div class="col-6 d-lg-flex justify-content-end d-none">
+                    <img class="w-75" src="./img/book.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5 container">
+        <div class="row text-center">
+            <div class="col-lg col-md-6 py-4">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Be Better</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 py-4">
+                <div class="card border-primary bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Be Smarter</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 py-4">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Be Faster</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 py-4">
+                <div class="card border-primary bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Be Stronger</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                            quo!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Authors">
+        <div class="container text-center">
+            <div class="w-50 m-auto">
+                <h1 class="text-primary mb-4">Meet The Authors</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora totam adipisci, consequuntur
+                    temporibus cumque?</p>
+                <hr class="w-75 mb-5 mx-auto">
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6 py-4">
+                    <div class="card">
+                        <img class="position-absolute rounded-circle customer-img" src="img/person1.jpg" alt="customer">
+                        <div class="card-body my-5 py-5">
+                            <h4 class="card-title">Susan Williams</h4>
+                            <h5 class="card-subtitle mb-2 text-body-secondary">Lead Writer</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 py-4">
+                    <div class="card">
+                        <img class="position-absolute rounded-circle customer-img" src="img/person2.jpg" alt="customer">
+                        <div class="card-body my-5 py-5">
+                            <h4 class="card-title">Grace Smith</h4>
+                            <h5 class="card-subtitle mb-2 text-body-secondary">Co-Writer</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 py-4">
+                    <div class="card">
+                        <img class="position-absolute rounded-circle customer-img" src="img/person3.jpg" alt="customer">
+                        <div class="card-body my-5 py-5">
+                            <h4 class="card-title">John Smith</h4>
+                            <h5 class="card-subtitle mb-2 text-body-secondary">Editor</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 py-4">
+                    <div class="card">
+                        <img class="position-absolute rounded-circle customer-img" src="img/person4.jpg" alt="customer">
+                        <div class="card-body my-5 py-5">
+                            <h4 class="card-title">Kevin Swanson</h4>
+                            <h5 class="card-subtitle mb-2 text-body-secondary">Designer</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact" class="bg-light py-5">
+        <div class="container ">
+            <h1>Get In Touch</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, praesentium?</p>
+            <div class="row align-items-center">
+                <div class="col-lg-10">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" id="floatingName" class="form-control" placeholder="Name"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa-solid fa-pencil"></i></span>
+                            <textarea class="form-control" aria-label="With textarea" rows="7"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <input type="submit" class="w-100 btn btn-primary border-0" value="Submit">
+                    </form>
+                </div>
+                <div class="d-lg-block col-lg-2 d-md-none">
+                    <img class="w-100" src="img/mlogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 bg-primary">
+        <div class="container">
+            <p class="text-end text-white">Copyright © 2023</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
